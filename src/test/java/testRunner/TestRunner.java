@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 	    features = "src/test/resources/features", // Path to your feature files
-	    tags =  "@login or @class",
+	    tags =  "@login,@class",
 	    glue = "stepDefinitions", // Package where your step definitions are located
 	    		plugin = {"pretty","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm", //Allure Report
 	    				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", //Extent Report
